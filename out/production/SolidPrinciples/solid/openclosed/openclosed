@@ -1,0 +1,4 @@
+*****Open Closed Prensibi****
+-Bu prensibin amacı yazılımıza gelecek yeni özellikleri, yazdığımız kodu bozmayacak,değişiklik yapmamızı engellemeyi amaçlar.if yapısını ortadan kaldırmayı hedefler
+-Hatali kullanımı incelersek KrediManagerda kredi hesaplarken tip gonderip kredi hesapladığımızı düşünelim. burada yenibir kreditipi çıktığında yeni bir if
+yapısı kullanmamız gerekebilir. Open Closed prensibine ters bir durum gerçekleşir

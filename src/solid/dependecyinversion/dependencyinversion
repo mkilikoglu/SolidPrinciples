@@ -1,0 +1,13 @@
+****Dependecny Inversion****Dependency Injection******
+-Bir classın örneğini aldığımızda new anahtar sözcüğünden faydalanırız.new anahtarını kullanmamız demek o classa bağımlı olduğumuz anlamına gelmektedir.
+-Örneği alınan classda değişiklik yaptığımızda onu new leyip kullanan classda da değişiklik yapmamız gerekektedir ve bu classı kullanan bütün yerlerde düzeltmem gerekmektedir.
+-Üst sınıf olan OnayManager bu şekilde alt sınıf olan email,sms,telefon sınıflarına bağımlı kaldı. EmailOnay sınıfında yapacağım onay metodundaki değişiklik
+bu sınıfı kullanan bütün yerlerde düzeltme gerekecektir. Bu durumda dependency inversion prensibi yardım eder.
+-Dependency Inversion prensibini interface aracılığıyle gerçekleştiririz.Interface aracılığıyla bunu implemente eden classlarda onayla metodunun yazılmasını garanti ederiz
+-Buradaki örneğimizde kullanıcının herhangi bir otomasyon sistemine kayıt olup onaylaması için seçenekler sunduğumuzu düşünelim.
+-OnayManager sınıfında interfacimizi constructorunda parametre olarak alalım ki hangi tipte yapacağımız belirtelim.
+-Main sınıfımızda ise OnayManager oluşturmak istediğimiz onaylama yöntemini seçeriz çalıştırırz.
+-İleride farklı bir yöntem ile onaylama yapılacağını farzedelim bu yöntem farzedelim mobil uygulama ile sağlansın. burada if yapısından kurtulduğumuza göre
+yeni bir onaylama sınıfında kurallarımızı belirtiriz sadece kullanmak istediğimize yöntemi belirtiriz.Kural belirttiğimiz için dependency injection tasarım desenini kullanmış olduk.
+-DependencyInversion ile üst sınıfın alt sınflarla bağımlılığını kaldırmış oluruz. Yazılımın hayatı için önemli kayıplardan kurtarızr.
+-Dependencey inversion bağımlılıkları azaltmamıza yardımcı olan yöntem iken dependency injection tasarım deseni olarak karşımıza çıkar.

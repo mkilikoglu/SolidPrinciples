@@ -1,0 +1,5 @@
+*****Single Responsibility*****
+-Bu prensib her sınıfın tek bir işten sorumlu olmasını hedefler. Başka sınıflarda yapabileceğimiz işlemlerin hepsini tek bir sınıfa yüklememiz bu prensibe göre  hatalıdır.
+-Kullanici servisini ekl  sil guncelle işlemlerimizi yaptığımız farzedelim. Burada kullanıcıya mail gonderme gibi bir metot yazmamız anlamsız olur.
+-Single Responsibility mantığına aykırı oldugu için iş katmanlarını bölmemiz bir classa gereğinden fazla yük yüklememiz gerekir.
+-Basit örneğimizde ayrı bir Email Servisi olusturup gonderebiliriz.
