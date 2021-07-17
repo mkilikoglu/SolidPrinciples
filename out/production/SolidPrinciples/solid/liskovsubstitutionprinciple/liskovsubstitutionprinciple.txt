@@ -1,8 +1,0 @@
-******Liskov Subsititution Principle*******
--Bu prensibte üst sınıf olan Vasıta Classını ele alalım. Prensibimize göre Üst sınıftaki kullanılan nesneler,metotlar alt sınıf içinde kullanılmalıdır.
--Buradaki amacımız üst sınıftaki davranışları kolaylıkla gerçekleştirmektir.
--Hatalı Örneğimize Bisiklet ve Araba classları pedalCevir,gazaBas metotlarını ortak kullanamıyorlar. Burda prensibimize aykırıdır.Çünkü Örneğin Bisiklet classını
-gazaBas özelliiğini olmadığı halde uygulatmaya çalışıyoruz.Prensibe aykırı
--Doğru kullanımda ise araya tekrar üst seviye classlar ekleyerek MotorluArac,MotorsuzArac Bisiklet ve arabanın yapamayacağı yetenekleri zorlatmıyoruz
--Kısacası alt sınıf üst sınıfı miras aldığımızda kullanmayacağı özellik ekleyemeyiz.
--Bu Hatalı kullanımın çözümünü interface ile (can-do) çözebilirdik.
