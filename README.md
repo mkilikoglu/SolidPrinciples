@@ -1,5 +1,5 @@
 # SolidPrinciples
- Bu Paylaşımda
+
  
  Single Responsibility Principle (SRP)
  Open Closed Principle (OSP)
@@ -7,4 +7,4 @@
  Interface Segregation Principle (ISP)
  Dependency Inversion Principle (DIP)
  
- örneklerini görebilirsiniz.
+
